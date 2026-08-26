@@ -1,0 +1,68 @@
+## Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+secrets/
+credentials/
+
+## Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+pip-wheel-metadata/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.hypothesis/
+
+## Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+.yarn/
+
+## Build and runtime output
+dist/
+build/
+coverage/
+*.log
+tmp/
+temp/
+*.pid
+
+## IDEs and local tooling
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.iml
+*.swp
+*.swo
+
+## OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+## Docker and local databases
+docker-compose.override.yml
+*.sqlite
+*.sqlite3
+*.db
