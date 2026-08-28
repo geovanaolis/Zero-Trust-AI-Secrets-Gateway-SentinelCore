@@ -9,3 +9,11 @@ class PromptResponse(BaseModel):
     original_text: str
     sanitized_text: str
     status: str = "success"
+
+class SecretCreateRequest(BaseModel):
+    name: str = Field(..., example="OPENAI_API_KEY")
+    value: str = Field(..., example="sk-proj-123456789abcdef")
+
+class SecretResponse(BaseModel):
+    name: str
+    status: str = "stored_encrypted"
